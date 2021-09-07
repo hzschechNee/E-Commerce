@@ -1,0 +1,45 @@
+
+.Landing{
+    height:  100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  
+  .landingContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end;
+    align-items: flex-end; */
+    padding: 40px;
+    
+  }
+
+  .landingContent p {
+    font-family: Great Vibes;
+    font-size: 5rem; 
+  }
+
+  .landingContent small {
+    font-family: Cookie;
+    font-size: 2rem;
+  }
+
+  
+@media (min-width: 650px){
+  .Landing{
+    background-position: center center;
+  }
+
+  .landingContent{
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .landingContent p { font-size: 3rem;}
+
+  .landingContent small {font-size: 2rem;}
+}

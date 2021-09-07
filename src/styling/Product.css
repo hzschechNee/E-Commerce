@@ -1,0 +1,15 @@
+.cardImg{
+    height: 65vh;
+    max-width: 70%;
+}
+
+.cardBody{
+    width: auto;
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    .cardImg{
+      height: 50vh;
+      max-width: 100%;
+    }
+  }

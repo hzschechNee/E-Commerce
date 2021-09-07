@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.cart-wrapper {
+  background-color: #eff0f5;
+  padding: 1rem 4rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.cartpage-label {
+  background-color: white;
+}
+.cartpage-label {
+  width: 40rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.left-cart-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.cart-carts-container {
+  padding: 2rem;
+  background-color: white;
+}
+
+.cart-image {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: fill;
+}
+.cart-body {
+  width: 15rem;
+  margin: 0 1rem;
+}
+
+.cart-promo {
+  margin-bottom: 0;
+  margin-right: 5px;
+  padding: 0 10px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 17px;
+  font-size: 12px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff7094, #f10653);
+}
+
+.cart-price-div {
+  width: 7rem;
+  height: 100%;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-price {
+  color: #f36f36;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.fa-trash-alt {
+  cursor: pointer;
+}
+.fa-trash-alt:hover {
+  color: #f33c36;
+  cursor: pointer;
+}
+
+.fa-trash-alt:active {
+  font-size: 1.2rem;
+}
+.clicked-heart {
+  color: red;
+}
+.clicked-heart:active {
+  font-size: 1.2rem;
+}
+.fa-heart {
+  cursor: pointer;
+}
+.fa-heart:hover {
+  color: red;
+}
+.fa-heart:active {
+  font-size: 1.2rem;
+}
+.cart-btn {
+  background-color: #f36f36;
+  border: none;
+  color: #eff0f5;
+  padding: 0.3rem 0.7rem;
+}
+
+.brand{
+  font-size: 2rem;
+  
+}

@@ -1,0 +1,10 @@
+.register{
+    width: 100%;
+    max-width: 500px;
+    max-height: 700vh;
+    height: 100%;
+    padding: 15px;
+    margin: 60px;
+    background-color: floralwhite;
+    position: center;
+  }

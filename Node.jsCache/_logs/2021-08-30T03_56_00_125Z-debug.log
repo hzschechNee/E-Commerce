@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'bootstrap@4.6.1'
+1 verbose cli ]
+2 info using npm@6.14.10
+3 info using node@v14.15.4
+4 verbose npm-session e4ab01c4fc969295
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/bootstrap 286ms
+8 silly fetchPackageMetaData error for bootstrap@4.6.1 No matching version found for bootstrap@4.6.1.
+9 timing stage:rollbackFailedOptional Completed in 1ms
+10 timing stage:runTopLevelLifecycles Completed in 3050ms
+11 verbose type version
+12 verbose stack bootstrap: No matching version found for bootstrap@4.6.1.
+12 verbose stack     at pickManifest (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-pick-manifest\index.js:122:13)
+12 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\pacote\lib\fetchers\registry\manifest.js:24:14
+12 verbose stack     at tryCatcher (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\util.js:16:23)
+12 verbose stack     at Promise._settlePromiseFromHandler (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\promise.js:517:31)
+12 verbose stack     at Promise._settlePromise (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\promise.js:574:18)
+12 verbose stack     at Promise._settlePromise0 (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\promise.js:619:10)
+12 verbose stack     at Promise._settlePromises (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\promise.js:699:18)
+12 verbose stack     at _drainQueueStep (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\async.js:138:12)
+12 verbose stack     at _drainQueue (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\async.js:131:9)
+12 verbose stack     at Async._drainQueues (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\async.js:147:5)
+12 verbose stack     at Immediate.Async.drainQueues [as _onImmediate] (C:\Program Files\nodejs\node_modules\npm\node_modules\bluebird\js\release\async.js:17:14)
+12 verbose stack     at processImmediate (internal/timers.js:461:21)
+13 verbose cwd C:\Users\mriju\Documents\balolot-hzschechneejessamine\capstone-3\react-booking
+14 verbose Windows_NT 10.0.19042
+15 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "bootstrap@4.6.1"
+16 verbose node v14.15.4
+17 verbose npm  v6.14.10
+18 error code ETARGET
+19 error notarget No matching version found for bootstrap@4.6.1.
+20 error notarget In most cases you or one of your dependencies are requesting
+20 error notarget a package version that doesn't exist.
+21 verbose exit [ 1, true ]

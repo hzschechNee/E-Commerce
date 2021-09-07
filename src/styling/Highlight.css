@@ -1,0 +1,35 @@
+.cardHighlight {
+    min-height: 50vh;
+    height: 60vh;
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .titleHigh {
+    font-family: Lusitana;
+    font-size: 2rem;
+  }
+  
+  .cardBody{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+  }
+  
+  .highImage {
+    height: 35vh;
+    width: 100%;
+    
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 768px) {
+    .cardHighlight{
+      height: 75vh;
+    }
+  }
+
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    .cardHighlight{
+      height: 63vh;
+    }
+  }

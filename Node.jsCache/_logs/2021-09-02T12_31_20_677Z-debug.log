@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'redux',
+1 verbose cli   'react-redux'
+1 verbose cli ]
+2 info using npm@6.14.10
+3 info using node@v14.15.4
+4 verbose npm-session 51d02ff776f67e9b
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData error for redux@latest request to https://registry.npmjs.org/redux failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+8 silly fetchPackageMetaData error for react-redux@latest request to https://registry.npmjs.org/react-redux failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+9 timing stage:rollbackFailedOptional Completed in 2ms
+10 timing stage:runTopLevelLifecycles Completed in 14865ms
+11 verbose type system
+12 verbose stack FetchError: request to https://registry.npmjs.org/redux failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+12 verbose stack     at ClientRequest.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\node-fetch-npm\src\index.js:68:14)
+12 verbose stack     at ClientRequest.emit (events.js:315:20)
+12 verbose stack     at TLSSocket.socketErrorListener (_http_client.js:469:9)
+12 verbose stack     at TLSSocket.emit (events.js:315:20)
+12 verbose stack     at emitErrorNT (internal/streams/destroy.js:106:8)
+12 verbose stack     at emitErrorCloseNT (internal/streams/destroy.js:74:3)
+12 verbose stack     at processTicksAndRejections (internal/process/task_queues.js:80:21)
+13 verbose cwd C:\Users\mriju\Documents\balolot-hzschechneejessamine\capstone-3\react-commerce
+14 verbose Windows_NT 10.0.19042
+15 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "redux" "react-redux"
+16 verbose node v14.15.4
+17 verbose npm  v6.14.10
+18 error code ENOTFOUND
+19 error errno ENOTFOUND
+20 error network request to https://registry.npmjs.org/redux failed, reason: getaddrinfo ENOTFOUND registry.npmjs.org
+21 error network This is a problem related to network connectivity.
+21 error network In most cases you are behind a proxy or have bad network settings.
+21 error network
+21 error network If you are behind a proxy, please make sure that the
+21 error network 'proxy' config is set properly.  See: 'npm help config'
+22 verbose exit [ 1, true ]
