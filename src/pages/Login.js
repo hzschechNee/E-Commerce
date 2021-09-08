@@ -33,7 +33,7 @@ export default function Login(){
 	function loginUser(e){
 		e.preventDefault();
 
-		fetch('http://localhost:8000/users/login', {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/users/login`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ export default function Login(){
 				// 	text: `Happy Shopping, ${email}!`
 				// })
 
-				fetch('http://localhost:8000/users/profile', {
+				fetch(`${process.env.REACT_APP_CAPS3BACKEND}/users/profile`, {
 					method: 'GET',
 					headers: {
 						Authorization: `Bearer ${data.accessToken}`

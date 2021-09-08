@@ -11,7 +11,7 @@ export default function CartPage() {
   const [cartListTotal, setCartListTotal] = useState(0);
 
   const fetchCartList = () => {
-    fetch(`http://localhost:8000/carts/get-cart`, {
+    fetch(`${process.env.REACT_APP_CAPS3BACKEND}/carts/get-cart`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
       },
@@ -23,7 +23,7 @@ export default function CartPage() {
   };
 
   const fetchCartListTotal = () => {
-    fetch(`http://localhost:8000/carts/user-cart`, {
+    fetch(`${process.env.REACT_APP_CAPS3BACKEND}/carts/user-cart`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
       },
@@ -40,7 +40,7 @@ export default function CartPage() {
   }, []);
 
   const orderAll = () => {
-    fetch(`http://localhost:8000/orders/multiple-orders`, {
+    fetch(`${process.env.REACT_APP_CAPS3BACKEND}/orders/multiple-orders`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

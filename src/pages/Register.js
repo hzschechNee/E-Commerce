@@ -34,7 +34,7 @@ export default function Register(){
 	function registerUser(e){
 		e.preventDefault();
 
-		fetch('http://localhost:8000/users/register', {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/users/register`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

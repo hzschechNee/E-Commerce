@@ -38,7 +38,7 @@ export default function Cart({ cartProps, fetchCartList, fetchCartListTotal }) {
   };
 
   const addToCart = (quantity) => {
-    fetch(`http://localhost:8000/carts/add-cart/${productId}`, {
+    fetch(`${process.env.REACT_APP_CAPS3BACKEND}/carts/add-cart/${productId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -56,7 +56,7 @@ export default function Cart({ cartProps, fetchCartList, fetchCartListTotal }) {
   };
 
   const orderProduct = () => {
-    fetch(`http://localhost:8000/orders/create-order/${productId}`, {
+    fetch(`${process.env.REACT_APP_CAPS3BACKEND}/orders/create-order/${productId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export default function Cart({ cartProps, fetchCartList, fetchCartListTotal }) {
   };
 
   const deleteCart = () => {
-    fetch(`http://localhost:8000/carts/delete-cart/${productId}`, {
+    fetch(`${process.env.REACT_APP_CAPS3BACKEND}/carts/delete-cart/${productId}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,

@@ -23,7 +23,7 @@ export default function SpecificProduct(){
 	console.log(productId)
 
 	useEffect(()=>{
-		fetch(`http://localhost:8000/products/${productId}`, {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/products/${productId}`, {
 			method: 'GET',
 			headers: {
 				'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ export default function SpecificProduct(){
 	//for order button
 	const order = (productId)=>{
 
-		fetch(`http://localhost:8000/orders/create-order/${productId}`, {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/orders/create-order/${productId}`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export default function SpecificProduct(){
 
 	const addToCart = (productId) => {
 
-		fetch(`http://localhost:8000/carts/add-cart/${productId}`, {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/carts/add-cart/${productId}`, {
 		  method: "POST",
 		  headers: {
 			"Content-Type": "application/json",

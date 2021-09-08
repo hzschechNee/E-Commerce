@@ -16,7 +16,7 @@ export default function ProductPage(){
 	
 
 	const fetchData = ()=>{
-		fetch('http://localhost:8000/products/all')
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/products/all`)
 		.then(res=> res.json())
 		.then(data=>{
 			console.log(data)

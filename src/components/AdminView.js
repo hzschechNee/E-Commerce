@@ -91,7 +91,7 @@ export default function AdminView(props){
 		data.append('price', price);
 		data.append('image', image);
 
-		fetch('http://localhost:8000/products/create', {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/products/create`, {
 			method: 'POST',
 			headers: {
 				// 'Content-Type': 'multipart/form-data',
@@ -138,7 +138,7 @@ export default function AdminView(props){
 	const editProduct = (e, productId) =>{
 		e.preventDefault();
 
-		fetch(`http://localhost:8000/products/update/${productId}`, {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/products/update/${productId}`, {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json',
@@ -174,7 +174,7 @@ export default function AdminView(props){
 
 	//archive a product
 	const archiveToggle = (productId, isActive) =>{
-		fetch(`http://localhost:8000/products/archive/${productId}`, {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/products/archive/${productId}`, {
 			method: 'DELETE',
 			headers: {
 				'Content-Type': 'application/json',
@@ -208,7 +208,7 @@ export default function AdminView(props){
 
 	//activate a product(false)
 	const activateToggle = (productId, isActive) =>{
-		fetch(`http://localhost:8000/products/activate/${productId}`, {
+		fetch(`${process.env.REACT_APP_CAPS3BACKEND}/products/activate/${productId}`, {
 			method: 'DELETE',
 			headers: {
 				'Content-Type': 'application/json',

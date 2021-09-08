@@ -7,7 +7,7 @@ export default function OrderPage() {
   const [orderList, setOrderList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/orders/history", {
+    fetch(`${process.env.REACT_APP_CAPS3BACKEND}/orders/history`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("accessToken")}`,
       },
