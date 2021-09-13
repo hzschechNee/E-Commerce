@@ -241,7 +241,7 @@ export default function AdminView(props){
 
 	return(
 		<>
-			<div className="border border-dark mt-5">
+			<div className="border border-dark mt-5 bg-white">
 			<div className="text-center my-4">
 				<h2>Admin Dashboard</h2>
 				<div className="d-flex justify-content-center">
